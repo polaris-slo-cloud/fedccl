@@ -1,0 +1,28 @@
+
+version: '3'
+services:
+  federated-server:
+    container_name: federated-server
+    build:
+      context: app
+      dockerfile: docker/server/Dockerfile
+    environment:
+      - SERVER_PORT=5555
+      - SITE_INFO_PATH=/test_data/site_info.csv
+      - DATA_PATH=/data
+    ports:
+      - "5555:5555"
+    volumes:
+      - server-data:/data
+      - ./data/test_data/site_info.csv:/test_data/site_info.csv:ro
+    networks:
+      - federated-network
+
+volumes:
+  server-data:
+    external: false
+
+networks:
+  federated-network:
+    driver: bridge
+    external: true

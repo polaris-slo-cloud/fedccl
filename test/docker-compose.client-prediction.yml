@@ -1,0 +1,300 @@
+
+version: '3'
+services:
+  
+  federated-client-site_0026:
+    container_name: federated-client-site_0026
+    build:
+      context: app
+      dockerfile: docker/client/Dockerfile
+    environment:
+      - SITE_ID=site_0026
+      - SERVER_ADDRESS=federated-server
+      - SERVER_PORT=5555
+      - TEST_DATA_PATH=/test_data
+      - SHARED_DATA_PATH=/shared_data
+      - DATA_PATH=/data
+      - VALUE_KEY=POWER_PRODUCTION
+      - RUN_TRAINING=False
+      - RUN_PREDICTION=True
+    volumes:
+      - client-site_0026-data:/data
+      - ./data/test_data/site_0026:/test_data:ro
+      - ./data/shared_data/federated/prediction:/shared_data
+    networks:
+      - federated-network
+  
+  federated-client-site_0021:
+    container_name: federated-client-site_0021
+    build:
+      context: app
+      dockerfile: docker/client/Dockerfile
+    environment:
+      - SITE_ID=site_0021
+      - SERVER_ADDRESS=federated-server
+      - SERVER_PORT=5555
+      - TEST_DATA_PATH=/test_data
+      - SHARED_DATA_PATH=/shared_data
+      - DATA_PATH=/data
+      - VALUE_KEY=POWER_PRODUCTION
+      - RUN_TRAINING=False
+      - RUN_PREDICTION=True
+    volumes:
+      - client-site_0021-data:/data
+      - ./data/test_data/site_0021:/test_data:ro
+      - ./data/shared_data/federated/prediction:/shared_data
+    networks:
+      - federated-network
+  
+  federated-client-site_0030:
+    container_name: federated-client-site_0030
+    build:
+      context: app
+      dockerfile: docker/client/Dockerfile
+    environment:
+      - SITE_ID=site_0030
+      - SERVER_ADDRESS=federated-server
+      - SERVER_PORT=5555
+      - TEST_DATA_PATH=/test_data
+      - SHARED_DATA_PATH=/shared_data
+      - DATA_PATH=/data
+      - VALUE_KEY=POWER_PRODUCTION
+      - RUN_TRAINING=False
+      - RUN_PREDICTION=True
+    volumes:
+      - client-site_0030-data:/data
+      - ./data/test_data/site_0030:/test_data:ro
+      - ./data/shared_data/federated/prediction:/shared_data
+    networks:
+      - federated-network
+  
+  federated-client-site_0027:
+    container_name: federated-client-site_0027
+    build:
+      context: app
+      dockerfile: docker/client/Dockerfile
+    environment:
+      - SITE_ID=site_0027
+      - SERVER_ADDRESS=federated-server
+      - SERVER_PORT=5555
+      - TEST_DATA_PATH=/test_data
+      - SHARED_DATA_PATH=/shared_data
+      - DATA_PATH=/data
+      - VALUE_KEY=POWER_PRODUCTION
+      - RUN_TRAINING=False
+      - RUN_PREDICTION=True
+    volumes:
+      - client-site_0027-data:/data
+      - ./data/test_data/site_0027:/test_data:ro
+      - ./data/shared_data/federated/prediction:/shared_data
+    networks:
+      - federated-network
+  
+  federated-client-site_0022:
+    container_name: federated-client-site_0022
+    build:
+      context: app
+      dockerfile: docker/client/Dockerfile
+    environment:
+      - SITE_ID=site_0022
+      - SERVER_ADDRESS=federated-server
+      - SERVER_PORT=5555
+      - TEST_DATA_PATH=/test_data
+      - SHARED_DATA_PATH=/shared_data
+      - DATA_PATH=/data
+      - VALUE_KEY=POWER_PRODUCTION
+      - RUN_TRAINING=False
+      - RUN_PREDICTION=True
+    volumes:
+      - client-site_0022-data:/data
+      - ./data/test_data/site_0022:/test_data:ro
+      - ./data/shared_data/federated/prediction:/shared_data
+    networks:
+      - federated-network
+  
+  federated-client-site_0024:
+    container_name: federated-client-site_0024
+    build:
+      context: app
+      dockerfile: docker/client/Dockerfile
+    environment:
+      - SITE_ID=site_0024
+      - SERVER_ADDRESS=federated-server
+      - SERVER_PORT=5555
+      - TEST_DATA_PATH=/test_data
+      - SHARED_DATA_PATH=/shared_data
+      - DATA_PATH=/data
+      - VALUE_KEY=POWER_PRODUCTION
+      - RUN_TRAINING=False
+      - RUN_PREDICTION=True
+    volumes:
+      - client-site_0024-data:/data
+      - ./data/test_data/site_0024:/test_data:ro
+      - ./data/shared_data/federated/prediction:/shared_data
+    networks:
+      - federated-network
+  
+  federated-client-site_0009:
+    container_name: federated-client-site_0009
+    build:
+      context: app
+      dockerfile: docker/client/Dockerfile
+    environment:
+      - SITE_ID=site_0009
+      - SERVER_ADDRESS=federated-server
+      - SERVER_PORT=5555
+      - TEST_DATA_PATH=/test_data
+      - SHARED_DATA_PATH=/shared_data
+      - DATA_PATH=/data
+      - VALUE_KEY=POWER_PRODUCTION
+      - RUN_TRAINING=False
+      - RUN_PREDICTION=True
+    volumes:
+      - client-site_0009-data:/data
+      - ./data/test_data/site_0009:/test_data:ro
+      - ./data/shared_data/federated/prediction:/shared_data
+    networks:
+      - federated-network
+  
+  federated-client-site_0005:
+    container_name: federated-client-site_0005
+    build:
+      context: app
+      dockerfile: docker/client/Dockerfile
+    environment:
+      - SITE_ID=site_0005
+      - SERVER_ADDRESS=federated-server
+      - SERVER_PORT=5555
+      - TEST_DATA_PATH=/test_data
+      - SHARED_DATA_PATH=/shared_data
+      - DATA_PATH=/data
+      - VALUE_KEY=POWER_PRODUCTION
+      - RUN_TRAINING=False
+      - RUN_PREDICTION=True
+    volumes:
+      - client-site_0005-data:/data
+      - ./data/test_data/site_0005:/test_data:ro
+      - ./data/shared_data/federated/prediction:/shared_data
+    networks:
+      - federated-network
+  
+  federated-client-site_0018:
+    container_name: federated-client-site_0018
+    build:
+      context: app
+      dockerfile: docker/client/Dockerfile
+    environment:
+      - SITE_ID=site_0018
+      - SERVER_ADDRESS=federated-server
+      - SERVER_PORT=5555
+      - TEST_DATA_PATH=/test_data
+      - SHARED_DATA_PATH=/shared_data
+      - DATA_PATH=/data
+      - VALUE_KEY=POWER_PRODUCTION
+      - RUN_TRAINING=False
+      - RUN_PREDICTION=True
+    volumes:
+      - client-site_0018-data:/data
+      - ./data/test_data/site_0018:/test_data:ro
+      - ./data/shared_data/federated/prediction:/shared_data
+    networks:
+      - federated-network
+  
+  federated-client-site_0006:
+    container_name: federated-client-site_0006
+    build:
+      context: app
+      dockerfile: docker/client/Dockerfile
+    environment:
+      - SITE_ID=site_0006
+      - SERVER_ADDRESS=federated-server
+      - SERVER_PORT=5555
+      - TEST_DATA_PATH=/test_data
+      - SHARED_DATA_PATH=/shared_data
+      - DATA_PATH=/data
+      - VALUE_KEY=POWER_PRODUCTION
+      - RUN_TRAINING=False
+      - RUN_PREDICTION=True
+    volumes:
+      - client-site_0006-data:/data
+      - ./data/test_data/site_0006:/test_data:ro
+      - ./data/shared_data/federated/prediction:/shared_data
+    networks:
+      - federated-network
+  
+  federated-client-site_0017:
+    container_name: federated-client-site_0017
+    build:
+      context: app
+      dockerfile: docker/client/Dockerfile
+    environment:
+      - SITE_ID=site_0017
+      - SERVER_ADDRESS=federated-server
+      - SERVER_PORT=5555
+      - TEST_DATA_PATH=/test_data
+      - SHARED_DATA_PATH=/shared_data
+      - DATA_PATH=/data
+      - VALUE_KEY=POWER_PRODUCTION
+      - RUN_TRAINING=False
+      - RUN_PREDICTION=True
+    volumes:
+      - client-site_0017-data:/data
+      - ./data/test_data/site_0017:/test_data:ro
+      - ./data/shared_data/federated/prediction:/shared_data
+    networks:
+      - federated-network
+  
+  federated-client-site_0012:
+    container_name: federated-client-site_0012
+    build:
+      context: app
+      dockerfile: docker/client/Dockerfile
+    environment:
+      - SITE_ID=site_0012
+      - SERVER_ADDRESS=federated-server
+      - SERVER_PORT=5555
+      - TEST_DATA_PATH=/test_data
+      - SHARED_DATA_PATH=/shared_data
+      - DATA_PATH=/data
+      - VALUE_KEY=POWER_PRODUCTION
+      - RUN_TRAINING=False
+      - RUN_PREDICTION=True
+    volumes:
+      - client-site_0012-data:/data
+      - ./data/test_data/site_0012:/test_data:ro
+      - ./data/shared_data/federated/prediction:/shared_data
+    networks:
+      - federated-network
+  
+
+volumes:
+  client-site_0026-data:
+    external: false
+  client-site_0021-data:
+    external: false
+  client-site_0030-data:
+    external: false
+  client-site_0027-data:
+    external: false
+  client-site_0022-data:
+    external: false
+  client-site_0024-data:
+    external: false
+  client-site_0009-data:
+    external: false
+  client-site_0005-data:
+    external: false
+  client-site_0018-data:
+    external: false
+  client-site_0006-data:
+    external: false
+  client-site_0017-data:
+    external: false
+  client-site_0012-data:
+    external: false
+  
+
+networks:
+  federated-network:
+    driver: bridge
+    external: true

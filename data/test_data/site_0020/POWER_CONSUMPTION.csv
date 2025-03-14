@@ -1,0 +1,2 @@
+time,site_id,value_key,avg,solar_rad,temp,app_temp,uv,precip,rh,ghi,snow_depth,clouds,solar_rad_1h,temp_1h,app_temp_1h,uv_1h,precip_1h,rh_1h,ghi_1h,snow_depth_1h,clouds_1h,solar_rad_2h,temp_2h,app_temp_2h,uv_2h,precip_2h,rh_2h,ghi_2h,snow_depth_2h,clouds_2h,avg_24h,accumulated_energy_24h,whole_day_energy_24h
+2023-05-12 13:45:00,site_0020,POWER_CONSUMPTION,-4636.260300667066,167.89174,12.4,12.4,2.0,0.5,86.0,800.78,0.0,98.0,,,,,,,,,,,,,,,,,,,,,

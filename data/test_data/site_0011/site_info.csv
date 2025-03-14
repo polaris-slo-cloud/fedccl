@@ -1,0 +1,9 @@
+,10
+site_id,site_0011
+clusters,"{'location': 0, 'orientation': 2}"
+lat,0
+lng,0
+zip,4073
+country,AT
+kwp,10.0
+weather_data,True
